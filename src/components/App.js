@@ -39,7 +39,7 @@ class App extends Component {
         temp += left1[i];
       }
       let val = 5 + Number(temp);
-      this.setState({ ballPosition: { left: val.toString() } });
+      this.setState({ ballPosition: { left: val + "px" } });
       this.renderChoice();
     }
   }
