@@ -33,7 +33,13 @@ class App extends Component {
   }
   handleKey(event) {
     if (event.keyCode === 39) {
-      this.setState({ ballPosition: { left: "5px" } });
+      let left1 = this.Sate.ballPosition.left;
+      let temp = "";
+      for (let i = 0; i < left1.length - 2; i++) {
+        temp += left1[i];
+      }
+      let val = 5 + Number(temp);
+      this.setState({ ballPosition: { left: val } });
       this.renderChoice();
     }
   }
