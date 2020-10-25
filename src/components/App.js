@@ -33,7 +33,7 @@ class App extends Component {
   }
   handleKey(event) {
     if (event.keyCode === 39) {
-      const left1 = this.Sate.ballPosition.left;
+      const left1 = this.state.ballPosition.left;
       let temp = "";
       for (let i = 0; i < left1.length - 2; i++) {
         temp += left1[i];
