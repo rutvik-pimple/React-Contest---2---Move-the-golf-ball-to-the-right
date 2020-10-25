@@ -32,13 +32,13 @@ class App extends Component {
     document.addEventListener("keydown", this.handleKey);
   }
   handleKey(event) {
-    let left1 = this.Sate.ballPosition.left;
-    let temp = "";
-    for (let i = 0; i < left1.length - 2; i++) {
-      temp += left1[i];
-    }
-    let val = 5 + Number(temp) + "px";
     if (event.keyCode === 39) {
+      const left1 = this.Sate.ballPosition.left;
+      let temp = "";
+      for (let i = 0; i < left1.length - 2; i++) {
+        temp += left1[i];
+      }
+      const val = 5 + Number(temp) + "px";
       this.setState({ ballPosition: { left: val } });
       this.renderChoice();
     }
